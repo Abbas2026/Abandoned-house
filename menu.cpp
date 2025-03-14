@@ -12,8 +12,9 @@
 #include <QPropertyAnimation>
 #include <QSequentialAnimationGroup>
 #include <QParallelAnimationGroup>
-#include <styles.h>
 #include <QTimer>
+#include <styles.h>
+#include <loading.h>
 Menu::Menu(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Menu)
@@ -100,7 +101,12 @@ void Menu::startAnimation() {
 void Menu::on_p_start_clicked()
 {
     QTimer::singleShot(1200, this, [this]() {
-        this->close();
+        Loading *loading = new Loading();
+        loading->setAttribute(Qt::WA_DeleteOnClose);
+        loading->showFullScreen();
+        QTimer::singleShot(1000, this, [this]() {
+ this->close();
+  });
     });
 }
 
