@@ -2,11 +2,12 @@
 #include "ui_loading.h"
 #include <QProgressBar>
 #include <QTimer>
+#include "start.h"
 Loading::Loading(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Loading)
 {
-
+    startcreated=false;
     ui->setupUi(this);
     ui->progressBar->setRange(0, 100);
     ui->progressBar->setValue(0);
@@ -36,12 +37,20 @@ Loading::~Loading()
 void Loading::updateProgress() {
     int value = ui->progressBar->value();
     if (value < 100) {
-        ui->progressBar->setValue(value + 2);
+        ui->progressBar->setValue(value + 5);
     } else {
         QTimer::singleShot(0, this, &Loading::goToNextPage);
     }
 }
 
 void Loading::goToNextPage() {
-    this->close();
+     if (!startcreated) {
+        startcreated=true;
+    start *st = new start();
+    st->setAttribute(Qt::WA_DeleteOnClose);
+    st->showFullScreen();
+    QTimer::singleShot(1000, this, [this]() {
+        this->close();
+    });
+     }
 }

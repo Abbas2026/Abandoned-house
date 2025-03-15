@@ -21,6 +21,7 @@ public:
     void setupVideoBackground();
     void setupBackgroundMusic();
     void applyStyles();
+    void stopMusic();
 
 private slots:
     void on_p_exit_clicked();

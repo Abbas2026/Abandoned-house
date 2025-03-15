@@ -1,12 +1,12 @@
 #include "menu.h"
-
+#include "start.h"
 #include <QApplication>
 
+Menu *globalMenu = nullptr;
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Menu w;
-    w.show();
-    w.showFullScreen();
+    globalMenu = new Menu();
+    globalMenu->showFullScreen();
     return a.exec();
 }

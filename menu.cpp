@@ -60,18 +60,14 @@ void Menu::setupVideoBackground() {
 
     }
 }
-
 void Menu::setupBackgroundMusic() {
     musicPlayer = new QMediaPlayer(this);
     audioOutput = new QAudioOutput(this);
     musicPlayer->setAudioOutput(audioOutput);
 
-    musicPlayer->setSource(QUrl::fromLocalFile("E:/game/Abandoned_house/main.mp3"));
-
-    audioOutput->setVolume(50);
-
+    musicPlayer->setSource(QUrl::fromLocalFile("E:/Abandoned-house/music/menu.mp3"));
+    audioOutput->setVolume(20);
     musicPlayer->setLoops(QMediaPlayer::Infinite);
-
     musicPlayer->play();
 }
 
@@ -109,4 +105,8 @@ void Menu::on_p_start_clicked()
   });
     });
 }
-
+void Menu::stopMusic()
+{
+    // توقف موزیک
+    musicPlayer->stop();
+}

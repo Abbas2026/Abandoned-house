@@ -12,16 +12,19 @@ CONFIG += c++17
 SOURCES += \
     loading.cpp \
     main.cpp \
-    menu.cpp
+    menu.cpp \
+    start.cpp
 
 HEADERS += \
     loading.h \
     menu.h \
+    start.h \
     styles.h
 
 FORMS += \
     loading.ui \
-    menu.ui
+    menu.ui \
+    start.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

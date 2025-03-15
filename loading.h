@@ -2,7 +2,6 @@
 #define LOADING_H
 
 #include <QWidget>
-
 namespace Ui {
 class Loading;
 }
@@ -17,6 +16,7 @@ public:
 
 private:
     Ui::Loading *ui;
+    bool startcreated;
 private slots:
     void updateProgress();
     void goToNextPage();

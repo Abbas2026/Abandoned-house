@@ -47,7 +47,7 @@ public:
 
     void retranslateUi(QWidget *Loading)
     {
-        Loading->setWindowTitle(QCoreApplication::translate("Loading", "Form", nullptr));
+        Loading->setWindowTitle(QCoreApplication::translate("Loading", "Abandoned house", nullptr));
         label->setText(QString());
     } // retranslateUi
 

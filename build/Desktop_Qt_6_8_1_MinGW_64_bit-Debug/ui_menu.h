@@ -129,7 +129,7 @@ public:
 
     void retranslateUi(QMainWindow *Menu)
     {
-        Menu->setWindowTitle(QCoreApplication::translate("Menu", "Menu", nullptr));
+        Menu->setWindowTitle(QCoreApplication::translate("Menu", "Abandoned house", nullptr));
         l_name_game->setText(QCoreApplication::translate("Menu", "Abandoned house", nullptr));
         p_start->setText(QCoreApplication::translate("Menu", "START A NEW GAME", nullptr));
         p_load->setText(QCoreApplication::translate("Menu", "LOAD GAME", nullptr));
