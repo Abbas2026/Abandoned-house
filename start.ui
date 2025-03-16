@@ -21,7 +21,7 @@
    <property name="geometry">
     <rect>
      <x>1560</x>
-     <y>970</y>
+     <y>980</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -61,7 +61,7 @@ background-color: rgba(72, 74, 89, 0);
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -78,7 +78,10 @@ background-color: rgba(72, 74, 89, 0);
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>C:/Users/User/OneDrive/دسکتاپ/New folder/DeWatermark.ai_1741983404306-ezgif.com-resize (2).png</pixmap>
+    <pixmap>images/rr.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QTextEdit" name="story_2">
@@ -297,7 +300,7 @@ border-radius:15px;</string>
    <property name="geometry">
     <rect>
      <x>1270</x>
-     <y>970</y>
+     <y>980</y>
      <width>521</width>
      <height>61</height>
     </rect>
@@ -316,7 +319,43 @@ border-radius:15px;</string>
     <string>I’ll do it</string>
    </property>
   </widget>
-  <zorder>label_2</zorder>
+  <widget class="QTextEdit" name="story_1">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>660</y>
+     <width>1321</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 28pt &quot;Amatic SC&quot;;
+background-color: rgba(72, 74, 89, 0);
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="blur">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>story</zorder>
   <zorder>story_2</zorder>
   <zorder>story_3</zorder>
@@ -327,9 +366,12 @@ border-radius:15px;</string>
   <zorder>story_8</zorder>
   <zorder>story_9</zorder>
   <zorder>story_10</zorder>
-  <zorder>left_btn</zorder>
+  <zorder>story_1</zorder>
+  <zorder>label</zorder>
+  <zorder>blur</zorder>
   <zorder>right_btn</zorder>
   <zorder>p_next</zorder>
+  <zorder>left_btn</zorder>
  </widget>
  <resources/>
  <connections/>

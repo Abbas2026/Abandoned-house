@@ -73,13 +73,15 @@ void Menu::setupBackgroundMusic() {
 
 void Menu::on_p_exit_clicked()
 {
-    this->close();
+    ui->p_exit->setEnabled(false);
+        QTimer::singleShot(1200, this, [this]() {
+        this->close();
+    });
 }
 
 void Menu::startAnimation() {
 
     QList<QPushButton*> buttons = {ui->p_start, ui->p_load, ui->p_about, ui->p_exit};
-
     int delay = 0;
     for (QPushButton *button : buttons) {
         QTimer::singleShot(delay, this, [this, button]() {
@@ -96,6 +98,8 @@ void Menu::startAnimation() {
 
 void Menu::on_p_start_clicked()
 {
+    ui->p_start->setEnabled(false);
+
     QTimer::singleShot(1200, this, [this]() {
         Loading *loading = new Loading();
         loading->setAttribute(Qt::WA_DeleteOnClose);
@@ -107,6 +111,17 @@ void Menu::on_p_start_clicked()
 }
 void Menu::stopMusic()
 {
-    // توقف موزیک
     musicPlayer->stop();
+}
+
+void Menu::on_p_load_clicked()
+{
+    ui->p_load->setEnabled(false);
+
+}
+
+void Menu::on_p_about_clicked()
+{
+    ui->p_about->setEnabled(false);
+
 }

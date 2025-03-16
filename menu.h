@@ -29,6 +29,10 @@ private slots:
 
     void on_p_start_clicked();
 
+    void on_p_load_clicked();
+
+    void on_p_about_clicked();
+
 private:
     Ui::Menu *ui;
 private:

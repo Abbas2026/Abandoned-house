@@ -1,0 +1,13 @@
+release/loading.o
+release/main.o
+release/menu.o
+release/page4.o
+release/page5.o
+release/start.o
+release/warning.o
+release/moc_loading.o
+release/moc_menu.o
+release/moc_page4.o
+release/moc_page5.o
+release/moc_start.o
+release/moc_warning.o

@@ -1,0 +1,13 @@
+debug/loading.o
+debug/main.o
+debug/menu.o
+debug/page4.o
+debug/page5.o
+debug/start.o
+debug/warning.o
+debug/moc_loading.o
+debug/moc_menu.o
+debug/moc_page4.o
+debug/moc_page5.o
+debug/moc_start.o
+debug/moc_warning.o

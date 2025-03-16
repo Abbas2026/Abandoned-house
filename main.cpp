@@ -1,7 +1,8 @@
 #include "menu.h"
 #include "start.h"
 #include <QApplication>
-
+#include "warning.h"
+#include "page4.h"
 Menu *globalMenu = nullptr;
 int main(int argc, char *argv[])
 {

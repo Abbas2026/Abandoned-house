@@ -13,18 +13,27 @@ SOURCES += \
     loading.cpp \
     main.cpp \
     menu.cpp \
-    start.cpp
+    page4.cpp \
+    page5.cpp \
+    start.cpp \
+    warning.cpp
 
 HEADERS += \
     loading.h \
     menu.h \
+    page4.h \
+    page5.h \
     start.h \
-    styles.h
+    styles.h \
+    warning.h
 
 FORMS += \
     loading.ui \
     menu.ui \
-    start.ui
+    page4.ui \
+    page5.ui \
+    start.ui \
+    warning.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -21,7 +21,6 @@ private slots:
     void on_p_next_clicked();
     void fadeText();
     void on_right_btn_clicked();
-
     void on_left_btn_clicked();
 
 private:

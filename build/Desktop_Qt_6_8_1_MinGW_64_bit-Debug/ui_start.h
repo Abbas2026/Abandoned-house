@@ -23,7 +23,7 @@ class Ui_start
 public:
     QPushButton *p_next;
     QTextEdit *story;
-    QLabel *label_2;
+    QLabel *label;
     QTextEdit *story_2;
     QTextEdit *story_3;
     QTextEdit *story_4;
@@ -35,6 +35,8 @@ public:
     QTextEdit *story_10;
     QPushButton *left_btn;
     QPushButton *right_btn;
+    QTextEdit *story_1;
+    QLabel *blur;
 
     void setupUi(QWidget *start)
     {
@@ -45,7 +47,7 @@ public:
 ""));
         p_next = new QPushButton(start);
         p_next->setObjectName("p_next");
-        p_next->setGeometry(QRect(1560, 970, 231, 61));
+        p_next->setGeometry(QRect(1560, 980, 231, 61));
         p_next->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         p_next->setStyleSheet(QString::fromUtf8("font: 24pt \"October Crow\";\n"
 "background-color: rgb(255, 0, 0);\n"
@@ -60,12 +62,13 @@ public:
 "background-color: rgba(72, 74, 89, 0);\n"
 ""));
         story->setReadOnly(true);
-        label_2 = new QLabel(start);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(0, 0, 1920, 1080));
-        label_2->setStyleSheet(QString::fromUtf8("background-color: rgba(72, 74, 89, 0);\n"
+        label = new QLabel(start);
+        label->setObjectName("label");
+        label->setGeometry(QRect(0, 0, 1920, 1080));
+        label->setStyleSheet(QString::fromUtf8("background-color: rgba(72, 74, 89, 0);\n"
 ""));
-        label_2->setPixmap(QPixmap(QString::fromUtf8("C:/Users/User/OneDrive/\330\257\330\263\332\251\330\252\330\247\331\276/New folder/DeWatermark.ai_1741983404306-ezgif.com-resize (2).png")));
+        label->setPixmap(QPixmap(QString::fromUtf8("images/rr.jpg")));
+        label->setScaledContents(true);
         story_2 = new QTextEdit(start);
         story_2->setObjectName("story_2");
         story_2->setEnabled(false);
@@ -149,14 +152,25 @@ public:
 "border-radius:15px;"));
         right_btn = new QPushButton(start);
         right_btn->setObjectName("right_btn");
-        right_btn->setGeometry(QRect(1270, 970, 521, 61));
+        right_btn->setGeometry(QRect(1270, 980, 521, 61));
         right_btn->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         right_btn->setStyleSheet(QString::fromUtf8("font: 24pt \"October Crow\";\n"
 "background-color: rgb(255, 0, 0);\n"
 "letter-spacing: 2px;\n"
 "border:none;\n"
 "border-radius:15px;"));
-        label_2->raise();
+        story_1 = new QTextEdit(start);
+        story_1->setObjectName("story_1");
+        story_1->setEnabled(false);
+        story_1->setGeometry(QRect(300, 660, 1321, 221));
+        story_1->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
+        story_1->setStyleSheet(QString::fromUtf8("font: 700 28pt \"Amatic SC\";\n"
+"background-color: rgba(72, 74, 89, 0);\n"
+""));
+        story_1->setReadOnly(true);
+        blur = new QLabel(start);
+        blur->setObjectName("blur");
+        blur->setGeometry(QRect(0, 0, 1920, 1080));
         story->raise();
         story_2->raise();
         story_3->raise();
@@ -167,9 +181,12 @@ public:
         story_8->raise();
         story_9->raise();
         story_10->raise();
-        left_btn->raise();
+        story_1->raise();
+        label->raise();
+        blur->raise();
         right_btn->raise();
         p_next->raise();
+        left_btn->raise();
 
         retranslateUi(start);
 
@@ -180,9 +197,10 @@ public:
     {
         start->setWindowTitle(QCoreApplication::translate("start", "Abandoned house", nullptr));
         p_next->setText(QCoreApplication::translate("start", "Continue", nullptr));
-        label_2->setText(QString());
+        label->setText(QString());
         left_btn->setText(QCoreApplication::translate("start", "no thanks", nullptr));
         right_btn->setText(QCoreApplication::translate("start", "I\342\200\231ll do it", nullptr));
+        blur->setText(QString());
     } // retranslateUi
 
 };

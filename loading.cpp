@@ -3,6 +3,7 @@
 #include <QProgressBar>
 #include <QTimer>
 #include "start.h"
+#include "warning.h"
 Loading::Loading(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Loading)
@@ -46,10 +47,10 @@ void Loading::updateProgress() {
 void Loading::goToNextPage() {
      if (!startcreated) {
         startcreated=true;
-    start *st = new start();
-    st->setAttribute(Qt::WA_DeleteOnClose);
-    st->showFullScreen();
-    QTimer::singleShot(1000, this, [this]() {
+        Warning *warning = new Warning();
+        warning->setAttribute(Qt::WA_DeleteOnClose);
+        warning->showFullScreen();
+        QTimer::singleShot(1000, this, [this]() {
         this->close();
     });
      }
