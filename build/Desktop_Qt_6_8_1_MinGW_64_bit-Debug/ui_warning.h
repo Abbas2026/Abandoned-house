@@ -36,7 +36,7 @@ public:
         label->setGeometry(QRect(0, 0, 1920, 1080));
         label->setStyleSheet(QString::fromUtf8("background-color: rgba(72, 74, 89, 0);\n"
 ""));
-        label->setPixmap(QPixmap(QString::fromUtf8("images/q.jpg")));
+        label->setPixmap(QPixmap(QString::fromUtf8("images/warning.jpg")));
         label->setScaledContents(true);
         p_next = new QPushButton(Warning);
         p_next->setObjectName("p_next");

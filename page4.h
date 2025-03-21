@@ -19,10 +19,10 @@ class Page4 : public QWidget
 public:
     explicit Page4(QWidget *parent = nullptr);
     ~Page4();
+
 private slots:
     void on_p_next_clicked();
     void fadeText();
-
 
 private:
     Ui::Page4 *ui;

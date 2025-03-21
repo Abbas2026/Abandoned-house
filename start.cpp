@@ -10,6 +10,7 @@
 #include "menu.h"
 #include "warning.h"
 #include "page4.h"
+#include "SignalManager.h"
 extern Menu *globalMenu;
 start::start(QWidget *parent)
     : QWidget(parent)
@@ -21,6 +22,7 @@ start::start(QWidget *parent)
         globalMenu->close();
         globalMenu->stopMusic();
     }
+        connect(SignalManager::instance(), &SignalManager::stopmusic, this, &start::close);
     ui->right_btn->hide();
     ui->left_btn->hide();
     ui->right_btn->setEnabled(false);
@@ -188,4 +190,12 @@ void start::on_left_btn_clicked()
 {
     this->hide();
 
+}
+void start::stopMusic()
+{
+    musicPlayer->stop();
+}
+void start::close() {
+    stopMusic();
+    QWidget::close();
 }

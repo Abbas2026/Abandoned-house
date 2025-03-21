@@ -1,9 +1,5 @@
 #include "page4.h"
 #include "ui_page4.h"
-#include <QTimer>
-#include <QPropertyAnimation>
-#include <QGraphicsOpacityEffect>
-#include <QStackedWidget>
 #include "styles.h"
 #include "page5.h"
 Page4::Page4(QWidget *parent)

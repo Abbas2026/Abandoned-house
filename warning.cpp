@@ -22,7 +22,6 @@ Warning::~Warning()
 void Warning::on_p_next_clicked()
 {
     start *st = new start();
-    st->setAttribute(Qt::WA_DeleteOnClose);
     st->showFullScreen();
     QTimer::singleShot(1000, this, [this]() {
         this->close();

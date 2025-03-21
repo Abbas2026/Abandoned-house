@@ -1,11 +1,8 @@
 #include "page5.h"
 #include "ui_page5.h"
-#include <QTimer>
-#include <QPropertyAnimation>
-#include <QGraphicsOpacityEffect>
-#include <QStackedWidget>
 #include "styles.h"
-#include "page5.h"
+#include "page8.h"
+#include "edithtml.h"
 Page5::Page5(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Page5)
@@ -44,7 +41,6 @@ Page5::Page5(QWidget *parent)
     stackedWidget->addWidget(ui->story_0);
     stackedWidget->addWidget(ui->story_1);
     stackedWidget->addWidget(ui->story_2);
-
     stackedWidget->setCurrentIndex(0);
     stackedWidget->setGeometry(300, 660, 1321, 211);
 
@@ -137,17 +133,17 @@ void Page5::on_p_next_clicked()
 
 void Page5::on_right_btn_clicked()
 {
-    // Page5 *page5 = new Page5();
-    // page5->setAttribute(Qt::WA_DeleteOnClose);
-    // page5->showFullScreen();
-    // QTimer::singleShot(1000, this, [this]() {
-    //     this->hide();
-    // });
+    Page8 *page8 = new Page8();
+    page8->setAttribute(Qt::WA_DeleteOnClose);
+    page8->showFullScreen();
+    QTimer::singleShot(1000, this, [this]() {
+        this->close();
+    });
 }
 
 void Page5::on_left_btn_clicked()
 {
-    this->hide();
+    this->close();
 
 }
 
@@ -178,19 +174,4 @@ void Page5::typewriterEffect(QTextEdit *textEdit, const QString &fullHtml)
     });
 
     timer->start(50);
-}
-Qt::Alignment Page5::getTextAlignment(const QString &html)
-{
-    if (html.contains("text-align: center") || html.contains("align=\"center\"")) {
-        return Qt::AlignCenter;
-    }
-    if (html.contains("text-align: right") || html.contains("align=\"right\"")) {
-        return Qt::AlignRight;
-    }
-    return Qt::AlignLeft; // پیش‌فرض چپ‌چین
-}
-QString Page5::extractPlainTextFromHtml(const QString &html) {
-    QTextDocument doc;
-    doc.setHtml(html);
-    return doc.toPlainText();  // فقط متن خام را برمی‌گرداند
 }

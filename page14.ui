@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Page14</class>
+ <widget class="QWidget" name="Page14">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(72, 74, 89, 0);
+
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(72, 74, 89, 0);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>images/14.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="blur">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="left_btn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>980</y>
+     <width>561</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;October Crow&quot;;
+background-color: rgb(255, 0, 0);
+letter-spacing: 2px;
+border:none;
+border-radius:15px;</string>
+   </property>
+   <property name="text">
+    <string>Going down the stairs to the kitchen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="right_btn">
+   <property name="geometry">
+    <rect>
+     <x>1230</x>
+     <y>980</y>
+     <width>561</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;October Crow&quot;;
+background-color: rgb(255, 0, 0);
+letter-spacing: 2px;
+border:none;
+border-radius:15px;</string>
+   </property>
+   <property name="text">
+    <string>Going back for the keys</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="p_next">
+   <property name="geometry">
+    <rect>
+     <x>1560</x>
+     <y>980</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;October Crow&quot;;
+background-color: rgb(255, 0, 0);
+letter-spacing: 2px;
+border:none;
+border-radius:15px;</string>
+   </property>
+   <property name="text">
+    <string>Continue</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="story_0">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>660</y>
+     <width>1321</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 28pt &quot;Amatic SC&quot;;
+background-color: rgba(72, 74, 89, 0);
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="story_1">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>660</y>
+     <width>1321</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 28pt &quot;Amatic SC&quot;;
+background-color: rgba(72, 74, 89, 0);
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="story_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>660</y>
+     <width>1321</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 28pt &quot;Amatic SC&quot;;
+background-color: rgba(72, 74, 89, 0);
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>blur</zorder>
+  <zorder>left_btn</zorder>
+  <zorder>p_next</zorder>
+  <zorder>right_btn</zorder>
+  <zorder>story_0</zorder>
+  <zorder>story_1</zorder>
+  <zorder>story_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

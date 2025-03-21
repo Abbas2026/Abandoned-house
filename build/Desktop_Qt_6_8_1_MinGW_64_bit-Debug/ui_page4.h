@@ -43,7 +43,7 @@ public:
         label->setGeometry(QRect(0, 0, 1920, 1080));
         label->setStyleSheet(QString::fromUtf8("background-color: rgba(72, 74, 89, 0);\n"
 ""));
-        label->setPixmap(QPixmap(QString::fromUtf8("images/h.png")));
+        label->setPixmap(QPixmap(QString::fromUtf8("images/4.png")));
         label->setScaledContents(true);
         story = new QTextEdit(Page4);
         story->setObjectName("story");

@@ -78,7 +78,7 @@ background-color: rgba(72, 74, 89, 0);
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>images/rr.jpg</pixmap>
+    <pixmap>images/1.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

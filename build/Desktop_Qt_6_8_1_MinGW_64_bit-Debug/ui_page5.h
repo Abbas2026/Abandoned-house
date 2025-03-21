@@ -42,7 +42,7 @@ public:
         label->setGeometry(QRect(0, 0, 1920, 1080));
         label->setStyleSheet(QString::fromUtf8("background-color: rgba(72, 74, 89, 0);\n"
 ""));
-        label->setPixmap(QPixmap(QString::fromUtf8("images/a.jpg")));
+        label->setPixmap(QPixmap(QString::fromUtf8("images/5.jpg")));
         label->setScaledContents(true);
         right_btn = new QPushButton(Page5);
         right_btn->setObjectName("right_btn");

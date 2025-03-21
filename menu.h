@@ -6,6 +6,7 @@
 #include <QAudioOutput>
 
 QT_BEGIN_NAMESPACE
+
 namespace Ui {
 class Menu;
 }
@@ -26,16 +27,12 @@ public:
 private slots:
     void on_p_exit_clicked();
     void startAnimation();
-
     void on_p_start_clicked();
-
     void on_p_load_clicked();
-
     void on_p_about_clicked();
 
 private:
     Ui::Menu *ui;
-private:
     QMediaPlayer *musicPlayer;
     QAudioOutput *audioOutput;
 

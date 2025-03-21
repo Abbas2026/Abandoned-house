@@ -16,6 +16,10 @@ class start : public QWidget
 public:
     explicit start(QWidget *parent = nullptr);
     ~start();
+    void closemenu();
+    void stopMusic();
+    void close();
+
 
 private slots:
     void on_p_next_clicked();

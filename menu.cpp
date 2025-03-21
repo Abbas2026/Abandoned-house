@@ -1,20 +1,17 @@
 #include "menu.h"
 #include "ui_menu.h"
-#include <QMediaPlayer>
 #include <QVideoWidget>
 #include <QGraphicsScene>
 #include <QGraphicsVideoItem>
 #include <QMediaPlayer>
-#include <QMediaPlayer>
-#include <QAudioOutput>
 #include <QWidget>
 #include <QPushButton>
 #include <QPropertyAnimation>
 #include <QSequentialAnimationGroup>
 #include <QParallelAnimationGroup>
 #include <QTimer>
-#include <styles.h>
-#include <loading.h>
+#include "styles.h"
+#include "loading.h"
 Menu::Menu(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Menu)
@@ -27,6 +24,8 @@ Menu::Menu(QWidget *parent)
     connect(ui->p_load, &QPushButton::clicked, this, &Menu::startAnimation);
     connect(ui->p_about, &QPushButton::clicked, this, &Menu::startAnimation);
     connect(ui->p_exit, &QPushButton::clicked, this, &Menu::startAnimation);
+
+
 }
 
 Menu::~Menu()
@@ -125,3 +124,4 @@ void Menu::on_p_about_clicked()
     ui->p_about->setEnabled(false);
 
 }
+
